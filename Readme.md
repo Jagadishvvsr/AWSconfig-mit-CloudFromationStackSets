@@ -1,19 +1,15 @@
 * AWS Organization-level compliance system using Config + StackSets to automatically detect and remediate non-compliant resources across all accounts in the Organisation.
 
 
+As organizations grow, managing compliance manually across multiple AWS accounts becomes increasingly difficult. Security standards, governance requirements, and operational policies need to be enforced consistently across the entire organization to reduce risk and maintain compliance.
 
-This solution is designed for organization-wide cloud governance and compliance at scale using AWS Config and CloudFormation StackSets.
+This solution leverages AWS Config and CloudFormation StackSets to automatically deploy and enforce compliance controls across all accounts within an AWS Organization. New accounts can automatically inherit the same governance framework without requiring manual configuration.
 
-With AWS Config rules deployed via CloudFormation StackSets, we can automatically enforce compliance policies across all accounts in an AWS Organization including newly added accounts without manual intervention.
+The stack is designed to be flexible and customizable, supporting resource exclusions, inclusion or exclusion of global resource types, service-specific recording overrides, and custom recording frequencies. This allows organizations to tailor monitoring and compliance controls based on their requirements.
 
+In addition, the solution integrates with Amazon SNS to send email notifications whenever non-compliant resources are detected, providing near real-time visibility into compliance violations across the organization. AWS Config data and compliance snapshots are also delivered to Amazon S3 for centralized storage, auditing, and reporting purposes.
 
-
-With growing AWS accounts and evolving security requirements, we cannot realistically monitor and audit every resource manually. This solution provides organization-wide visibility and automated compliance enforcement, ensuring all accounts follow the same security and governance standards.
-
-
-
-The solution is designed to be flexible and customizable. It supports resource exclusions, inclusion or exclusion of global resource types, service-specific recording overrides, and custom recording frequencies. This allows organizations to tailor AWS Config monitoring based on their operational, compliance, and cost requirements while maintaining a consistent governance framework.
-
+The framework can be extended further by attaching remediation actions, such as terminating non-compliant resources, invoking AWS Lambda functions, or triggering AWS Systems Manager Automation documents, enabling automated enforcement of organizational security policies.
 
 
 Key capabilities:
