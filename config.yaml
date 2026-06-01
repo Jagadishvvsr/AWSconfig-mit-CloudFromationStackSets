@@ -244,6 +244,8 @@ Resources:
 
   DeliveryChannel:
     Type: AWS::Config::DeliveryChannel
+    DependsOn: 
+      - S3Bucket
     Properties:
       ConfigSnapshotDeliveryProperties:
         DeliveryFrequency: !Ref DeliveryFrequency
