@@ -1,4 +1,4 @@
-* AWS Organization-level compliance system using Config + StackSets to automatically detect and remediate non-compliant resources across all accounts in the Organisation.
+# AWS Organization-level compliance system using Config + StackSets to automatically detect and remediate non-compliant resources across all accounts in the Organisation.
 
 
 As organizations grow, managing compliance manually across multiple AWS accounts becomes increasingly difficult. Security standards, governance requirements, and operational policies need to be enforced consistently across the entire organization to reduce risk and maintain compliance.
@@ -14,41 +14,41 @@ The framework can be extended further by attaching remediation actions, such as 
 
 Key capabilities:
 
-* Centralized compliance monitoring
+## Centralized compliance monitoring
 
-   ** Track all AWS resources across multiple accounts
+   * Track all AWS resources across multiple accounts
 
-   ** Detect non-compliant resources in real time
+   * Detect non-compliant resources in real time
 
  
 
-* Organization-wide enforcement using StackSets 
+## Organization-wide enforcement using StackSets 
 
-   ** Automatically deploy Config rules to every account in AWS Organization
+   * Automatically deploy Config rules to every account in AWS Organization
 
-   ** Ensure consistent governance across all environments (dev/stage/prod) 
-
-
-
-* Automated remediation 
-
-  ** Trigger actions when non-compliance is detected
-
-  ** Example: terminate non-compliant EC2 instances 
-
-  ** or invoke custom remediation workflows using Lambda / SSM
+   * Ensure consistent governance across all environments (dev/stage/prod) 
 
 
 
-* Scalable governance model
+## Automated remediation 
 
-  ** Add new Config rules over time without redesigning architecture
+  * Trigger actions when non-compliance is detected
 
-  ** Policies evolve with organizational security requirements
+  * Example: terminate non-compliant EC2 instances 
+
+  * or invoke custom remediation workflows using Lambda / SSM
 
 
 
-* Outcome:
+## Scalable governance model
+
+  * Add new Config rules over time without redesigning architecture
+
+  * Policies evolve with organizational security requirements
+
+
+
+# Outcome:
 
 This creates a self-healing, policy-driven cloud environment where compliance is continuously enforced rather than manually audited.
 
