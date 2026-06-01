@@ -53,6 +53,6 @@ Key capabilities:
 This creates a self-healing, policy-driven cloud environment where compliance is continuously enforced rather than manually audited.
 
 
-* Architecture
+# Architecture
 
 ![alt text](<Screenshot 2026-06-01 202254.png>)
